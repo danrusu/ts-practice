@@ -1,0 +1,23 @@
+{
+  "include": ["app/**/*.ts"],
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "outDir": "dist",
+
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+
+    "types": ["node"],
+
+    "paths": {
+      "@/*": ["./app/*"]
+    }
+  },
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+  }
+}

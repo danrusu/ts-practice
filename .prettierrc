@@ -1,0 +1,17 @@
+{
+  "useTabs": false,
+  "singleQuote": true,
+  "printWidth": 130,
+  "tabWidth": 2,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.{scss,yml}",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ],
+  "attributeGroups": ["^(id|name)$", "^class$"],
+  "attributeSort": "ASC"
+}
