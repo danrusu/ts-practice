@@ -1,19 +1,48 @@
 {
-  "include": ["app/**/*.ts"],
+  "include": ["src/**/*.ts"],
 
   "compilerOptions": {
+    /* Base Options: */
     "target": "ESNext",
-    "baseUrl": ".",
-    "outDir": "dist",
 
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    /* Transpiling with TypeScript: */
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": true,
+
+    /* Strictness */
     "strict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+    "noImplicitOverride": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Can be used as a library */
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
 
     "types": ["node"],
 
+    /* code can run in the DOM: */
+    "lib": ["es2022", "dom", "dom.iterable"],
+
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["./src/*"]
     }
   },
   "ts-node": {

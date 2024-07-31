@@ -6,9 +6,6 @@ export default class Person {
   }
 
   message() {
-    let t;
-    t = 10;
-    t = '';
     console.log(`Hello ${this.#name}!`);
   }
 }
